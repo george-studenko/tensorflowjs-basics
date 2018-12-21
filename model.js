@@ -1,3 +1,4 @@
+// Define de model
 const model  = tf.sequential()
 
 const config_hidden = {
@@ -7,8 +8,8 @@ const config_hidden = {
 }
 
 const config_output = {
-  units = 2,
-  activation = 'sigmoid'
+  units : 2,
+  activation : 'sigmoid'
 }
 
 const hidden_layer = tf.layers.dense(config_hidden);
@@ -26,3 +27,5 @@ const model_config = {
 }
 
 model.compile(model_config);
+
+console.log('Model compiled');
